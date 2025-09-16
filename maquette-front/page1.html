@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test psychotechnique - AAAEP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'green-custom': '#22c55e',
+                        'blue-custom': '#3b82f6',
+                        'gray-custom': '#6b7280'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4 px-6 fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">A</span>
+                </div>
+                <div>
+                    <h1 class="text-sm font-semibold text-gray-800">AAAEP</h1>
+                    <p class="text-xs text-gray-600">CENTRE NATIONAL<br>DE TESTS PSYCHOTECHNIQUES</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-8">
+        <!-- Title Section -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">
+                Test psychotechnique pour permis de conduire à Montgeron
+            </h2>
+        </div>
+
+        <!-- Reservation Section -->
+        <div class="mb-12">
+            <h3 class="text-xl font-medium text-gray-700 mb-8">Complétez votre réservation</h3>
+            
+            <!-- Pricing Cards -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-lg border border-gray-300 p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-center mb-6">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-2">Basic</h4>
+                        <p class="text-sm text-gray-600 mb-4">Votre test psychotechnique simple</p>
+                        <div class="text-3xl font-bold text-gray-800 mb-4">+ 0€</div>
+                        <button class="w-full bg-gray-100 text-gray-800 py-2 px-4 rounded-md hover:bg-gray-200 transition-colors">
+                            Sélectionner
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-3 text-sm text-gray-600">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Entraînement illimité et gratuit</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Annulation jusqu'à 48 heures</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Recevez votre test le jour J</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assurance Plan (Featured) -->
+                <div class="bg-white rounded-lg border-4 border-green-500 p-6 relative hover:shadow-lg transition-shadow">
+                    <div class="text-center mb-6">
+                        <h4 class="text-lg font-semibold text-white bg-green-500 px-4 py-1 rounded-t-md mb-2">Assurance</h4>
+                        <p class="text-sm text-gray-600 mb-4">Votre test psychotechnique sans stress</p>
+                        <div class="text-3xl font-bold text-gray-800 mb-1">+ 40€</div>
+                        <p class="text-xs text-gray-500 mb-4">A peine le prix d'un repas</p>
+                        <button class="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition-colors">
+                            Sélectionner
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-3 text-sm text-gray-600">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Entraînement illimité et gratuit</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Annulation jusqu'à 48 heures</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Repassez votre test pour 0€ (si test échoué)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Recevez votre test le jour J</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Livret de préparation au test psychotechnique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Complet Plan -->
+                <div class="bg-white rounded-lg border-4 border-blue-500 p-6 hover:shadow-lg transition-shadow">
+                    <div class="text-center mb-6">
+                        <h4 class="text-lg font-semibold text-white bg-blue-500 px-4 py-1 rounded-t-md mb-2">Complet</h4>
+                        <p class="text-sm text-gray-600 mb-4">Votre test psychotechnique tout compris</p>
+                        <div class="text-3xl font-bold text-gray-800 mb-1">+ 60€</div>
+                        <p class="text-xs text-gray-500 mb-4">A peine le prix de 2 pizzas</p>
+                        <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors">
+                            Sélectionner
+                        </button>
+                    </div>
+                    
+                    <div class="space-y-3 text-sm text-gray-600">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Entraînement illimité et gratuit</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Annulation jusqu'à 24 heures</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Repassez votre test pour 0€ (si test échoué)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Recevez votre test le jour J</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Livret de préparation au test psychotechnique</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>Téléchargez vos résultats en illimité</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer / Order Summary -->
+    <footer class="bg-gray-800 text-white py-4 px-6 fixed bottom-0 left-0 right-0">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Order Details -->
+            <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-2 bg-gray-700 px-4 py-2 rounded-md">
+                    <svg class="w-5 h-5 text-pink-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                    </svg>
+                    <div>
+                        <p class="text-sm font-medium">Test psychotechnique le 28 mars à 14:00</p>
+                        <p class="text-xs text-gray-300">15 rue de la république Montgeron 91230</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total and Payment -->
+            <div class="flex items-center space-x-6">
+                <div class="text-right">
+                    <p class="text-sm text-gray-300">Total</p>
+                    <p class="text-2xl font-bold">135€</p>
+                </div>
+                <button class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-md font-medium transition-colors flex items-center space-x-2">
+                    <span>Suivant</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add padding to avoid header and footer overlap -->
+    <style>
+        body {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    </style>
+</body>
+</html>

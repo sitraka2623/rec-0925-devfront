@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmer et payer - AAAEP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pink-custom': '#ec4899'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4 px-6 fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg">A</span>
+                </div>
+                <div>
+                    <h1 class="text-sm font-semibold text-gray-800">AAAEP</h1>
+                    <p class="text-xs text-gray-600">CENTRE NATIONAL<br>DE TESTS PSYCHOTECHNIQUES</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-8">
+        <!-- Title Section -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-medium text-gray-800 mb-2">
+                Test psychotechnique pour permis de conduire à Montgeron
+            </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Left Column - Form -->
+            <div>
+                <!-- Confirmer et payer -->
+                <h3 class="text-xl font-medium text-gray-900 mb-6">Confirmer et payer</h3>
+                
+                <!-- Date Alert -->
+                <div class="flex items-start mb-8">
+                    <svg class="w-5 h-5 text-red-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"></path>
+                    </svg>
+                    <div>
+                        <h4 class="text-sm font-medium text-gray-900">Date de réservation en forte demande</h4>
+                        <p class="text-sm text-gray-600">Les réservations sont fréquentes pour ce centre</p>
+                    </div>
+                </div>
+
+                <!-- Personal Information Form -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-medium text-gray-900 mb-6">Vos informations personnelles</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Nom Prénom" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 placeholder-gray-500">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 placeholder-gray-500">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Numéro de téléphone" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-gray-900 placeholder-gray-500">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Test Details -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-medium text-gray-900 mb-6">Votre test psychotechnique</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <p class="font-medium text-gray-900">Date</p>
+                                <p class="text-gray-600">12 mai 2025</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <p class="font-medium text-gray-900">Horaire</p>
+                                <p class="text-gray-600">12:30</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                            </svg>
+                            <div>
+                                <p class="font-medium text-gray-900">Adresse</p>
+                                <p class="text-gray-600">39 Rue Emile Steiner, 27200 Vernon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-8 border-gray-200">
+
+                <!-- Payment Methods -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-medium text-gray-900 mb-4">Choisissez votre moyen de paiement</h4>
+                    <div class="flex items-center mb-4">
+                        <svg class="w-4 h-4 text-black mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-sm font-medium text-black">100% SÉCURISÉ</span>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <label class="flex items-center p-3 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-50 bg-white">
+                            <input type="radio" name="payment" class="mr-4 w-4 h-4" checked>
+                            <div class="flex items-center space-x-3">
+                                <div class="flex items-center space-x-1">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAzMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0iIzAwNTFBNSIvPgo8cGF0aCBkPSJNMTIuNSA5SDEwVjE0SDEyLjVWOVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yMCA5SDE3LjVWMTRIMjBWOVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=" alt="CB" class="w-7 h-5">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAzMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMwIiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0iI0VCMDAxQiIvPgo8cGF0aCBkPSJNMTIuNSA5SDEwVjE0SDEyLjVWOVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yMCA5SDE3LjVWMTRIMjBWOVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=" alt="Mastercard" class="w-7 h-5">
+                                </div>
+                                <span class="font-medium text-gray-900">Carte bancaire</span>
+                            </div>
+                        </label>
+                        
+                        <label class="flex items-center p-3 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-50 bg-white">
+                            <input type="radio" name="payment" class="mr-4 w-4 h-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-5 bg-black rounded text-white text-xs flex items-center justify-center font-bold">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                        <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09z"/>
+                                        <path d="M15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701z"/>
+                                    </svg>
+                                </div>
+                                <span class="font-medium text-gray-900">Apple Pay</span>
+                            </div>
+                        </label>
+                        
+                        <label class="flex items-center p-3 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-50 bg-white">
+                            <input type="radio" name="payment" class="mr-4 w-4 h-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-5 bg-blue-600 rounded text-white text-xs flex items-center justify-center font-bold">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                        <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a9.36 9.36 0 0 1-.77 3.739c-1.31 6.118-5.944 6.832-11.37 6.832L8.56 21.337h4.57c.434 0 .802-.317.87-.748L15.206 14.469c.068-.43.436-.748.87-.748h1.542c3.585 0 6.297-1.46 7.604-6.804z"/>
+                                    </svg>
+                                </div>
+                                <span class="font-medium text-gray-900">Paypal</span>
+                            </div>
+                        </label>
+                        
+                        <label class="flex items-center p-3 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-50 bg-white">
+                            <input type="radio" name="payment" class="mr-4 w-4 h-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-5 bg-gray-800 rounded text-white text-xs flex items-center justify-center">
+                                    <span class="text-xs font-bold">alma</span>
+                                </div>
+                                <span class="font-medium text-gray-900">Alma</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Reserve Button -->
+                <button class="w-full bg-pink-600 hover:bg-pink-700 text-white py-4 px-6 rounded-md font-medium text-lg transition-colors flex items-center justify-center space-x-2">
+                    <span>Je réserve mon test psychotechnique</span>
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Right Column - Summary -->
+            <div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h4 class="text-lg font-semibold text-pink-600 mb-6">Récapitulatif de votre test psychotechnique</h4>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-gray-700">Total à payer :</span>
+                            <span class="text-2xl font-bold text-gray-900">130.00€</span>
+                        </div>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            En passant votre commande, vous acceptez les conditions générales de vente de la société AAAEP. Veuillez consulter notre politique de protection des données.
+                        </p>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div class="flex flex-col items-center">
+                            <div class="mb-2">
+                                <svg class="w-10 h-10 text-green-500" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23 5.5V20c0 2.2-1.8 4-4 4h-7.3c-1.08 0-2.1-.43-2.85-1.19L1 14.83s1.26-1.23 1.3-1.25c.22-.19.49-.29.79-.29.22 0 .42.06.6.16.04.01 4.31 2.46 4.31 2.46V4c0-.83.67-1.5 1.5-1.5S11 3.17 11 4v7h1V1.5c0-.83.67-1.5 1.5-1.5S15 .67 15 1.5V11h1V2.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5V11h1V5.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5z"/>
+                                </svg>
+                            </div>
+                            <p class="text-xs font-medium text-gray-800">Entraînement</p>
+                            <p class="text-xs text-gray-600">Gratuit Illimité</p>
+                        </div>
+                        
+                        <div class="flex flex-col items-center">
+                            <div class="mb-2">
+                                <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                </svg>
+                            </div>
+                            <p class="text-xs font-medium text-gray-800">Résultats</p>
+                            <p class="text-xs text-gray-600">le Jour Même</p>
+                        </div>
+                        
+                        <div class="flex flex-col items-center">
+                            <div class="mb-2">
+                                <svg class="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <p class="text-xs font-medium text-gray-800">Annulation</p>
+                            <p class="text-xs text-gray-600">Gratuits jusqu'à 48h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add padding to avoid header overlap -->
+    <style>
+        body {
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+    </style>
+</body>
+</html>
